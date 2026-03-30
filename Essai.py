@@ -46,7 +46,7 @@ if ticker:
 
             st.subheader("Current Ratio")
             st.write(result)
-            st.line_chart(result, color='result')
+            st.line_chart(result, x='selected_years', y='current_ratio' color='current_ratio')
 
     except Exception as e:
         st.error(f"Erreur : {e}")
